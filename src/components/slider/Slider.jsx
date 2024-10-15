@@ -69,14 +69,19 @@ const Slider = () => {
                                         <div className='absolute top-0 bottom-0 right-0 left-0 bg-black bg-opacity-50'></div>
 
                                     </div>
-                                    <div className='absolute inset-0 top-72 lg:top-52 flex flex-col justify-center text-center items-center animatedText'>
-                                        <h2 className=' text-lg lg:text-7xl text-white w-[80%]'>{t(slide?.title)}</h2>
+                                    <div className='absolute  top-72 lg:top-52 start-40 flex flex-col   items-start animatedText'>
+                                        <div className='flex items-center gap-3'>
+                                            <div className='border-b-2 border-primary_Color_Meduim  w-5'/>
+                                            <p className='text-primary_Color_Meduim uppercase tracking-wider font-semibold py-4'>homely kitchen</p>
+                                        </div>
+                                        <h2 className=' text-lg lg:text-7xl text-white  '>{t(slide?.title)}</h2>
 
 
-                                        <div className='lg:mt-16 mb-10 text-white  text-[12px] lg:text-3xl  w-[80%]' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t(slide?.details)) }} />
-                                        <Link href={'/about'} className=' my-14 bg-primary_Color_Light cursor-pointer hover:bg-primary_Color_dark text-[13px] lg:text-lg text-white py-3 px-4 '>{t("Discover More")}</Link>
+                                        <div className='  text-white  text-[12px] py-7 lg:text-2xl  w-[80%]' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t(slide?.details)) }} />
+                                    <Link href={'/about'} className=' my-10 border-primary_Color_Meduim border-2 cursor-pointer  hover:bg-primary_Color_dark text-[13px] lg:text-lg text-white py-2 px-14 tracking-widest capitalize '>{t("Call us Now")}</Link>
 
                                     </div>
+
 
 
                                 </SwiperSlide>

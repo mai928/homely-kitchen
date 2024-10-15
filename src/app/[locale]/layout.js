@@ -19,7 +19,7 @@ export async function generateMetadata() {
 	  const data = await getMetadata()
   
 	  return {
-		title: "Class A",
+		title: "Homely Kitchen",
 		description: "Class A Food Industries",
 		icons: {
 		  icon: [{
@@ -29,7 +29,7 @@ export async function generateMetadata() {
 	  }
 	} catch (error) {
 	  return {
-		title: "Class A",
+		title: "Homely Kitchen",
 		description: "Class A Food Industries",
 		icons: {
 		  icon: [{

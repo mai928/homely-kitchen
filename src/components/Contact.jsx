@@ -100,7 +100,7 @@ const Contact = () => {
                     <input onChange={handleChange} type='text' name='phone' id='phone' value={formData.phone} required className='block border-[1px] text-gray-700 placeholder:text-gray-700  border-slate-200  py-3 my-5 px-5 w-full' placeholder={t('Phone')} />
                     <textarea onChange={handleChange} name='message' id='message' value={formData.message} required className='block border-[1px] text-gray-700 placeholder:text-gray-700  border-slate-200  py-3 my-5 px-5 w-full' placeholder={t('Message')} cols={5} />
                     <div className='flex justify-end'>
-                        <button type='submit' className=' bg-primary_Color_Light hover:bg-primary_Color_dark text-white  text-lg py-2 px-10'>{t("Send")}</button>
+                        <button type='submit' className=' bg-primary_Color_Meduim hover:bg-primary_Color_dark text-white  text-lg py-2 px-10'>{t("Send")}</button>
 
                     </div>
 

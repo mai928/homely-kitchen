@@ -110,7 +110,8 @@ const Header = () => {
             </div>
           </div>
         ) : (
-          <div> <FirstNav showmenuIcon={showmenuIcon} />
+          <div> 
+            {/* <FirstNav showmenuIcon={showmenuIcon} /> */}
             <SecondNav showmenuIcon={showmenuIcon} />
           </div>
         )

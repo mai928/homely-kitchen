@@ -79,7 +79,7 @@ const Subscription = () => {
     };
     return (
         <section>
-            <div className='bg-primary_Color_Light '>
+            <div className='bg-primary_Color_Meduim bg-opacity-75 '>
                 <div className='block lg:flex justify-between  items-center text-center lg:text-start lg:mx-28 py-10'>
                     <div>
                         <h3 className='text-3xl text-white'>{t("Subscribe for")}<span className='text-black font-bold '>{t("News")}</span>{t("letter")}</h3>

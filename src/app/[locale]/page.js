@@ -7,17 +7,19 @@ import Slider from "@/components/slider/Slider";
 import Video from "@/components/Video";
 import Brands from "@/components/Brands";
 import Team from "@/components/Team";
+import Portfolio from "@/components/Portfolio";
 
 export default function Home({params}) {
 	return (
-		<main className="">
+		<main className="z-0">
 			<Slider />
 			<About params={params} />
-			<Brands/>
+			<Portfolio/>
+			{/* <Brands/> */}
 			<Video/>
 			<Blogs />
 			<Contact params={params} />
-			<Team/>
+			{/* <Team/> */}
 		</main>
 	);
 }

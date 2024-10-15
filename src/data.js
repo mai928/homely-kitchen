@@ -108,18 +108,18 @@ export const navbarLink = [
 		path: "/about",
 		name: "About",
 	},
-	{
-		path: "/brands",
-		name: "Brands",
-	},
-	{
-		path: "/media",
-		name: "Media",
-	},
-	{
-		path: "/business",
-		name: "Business",
-	},
+	// {
+	// 	path: "/brands",
+	// 	name: "Brands",
+	// },
+	// {
+	// 	path: "/media",
+	// 	name: "Media",
+	// },
+	// {
+	// 	path: "/business",
+	// 	name: "Business",
+	// },
 	{
 		path: "/contact",
 		name: "Contact",
@@ -128,21 +128,21 @@ export const navbarLink = [
 
 export const sliderData = [
 	{
-		photo: 'assets/para1.jpg',
-		title: "Save the Life",
-		details: "Help People for their needs all over the world!"
+		photo: 'assets/slide11.jpg',
+		title: "Luxury Kitchen design",
+		details: "Complete Remodeling & Renovation!"
 	},
 	{
-		photo: 'assets/slider11-remove.jpeg',
-		title: "Save the Life",
-		details: "Help People for their needs all over the world!"
+		photo: 'assets/para1.jpg',
+		title: "Luxury Kitchen design",
+		details: "Complete Remodeling & Renovation!"
 	}
 ];
 
 export const services = [
 	{
 		id: 1,
-		src: '/assets/service.jpg',
+		photo: '/assets/service.jpg',
 		title: "Brand1",
 		desc: "Medical is the knowledge or master event. Identify the error of the we coding page speed.",
 	},
@@ -286,4 +286,72 @@ export const mediaData = [
 		src: '/media/video1.mp4',
 
 	},
+];
+
+
+export const Productgallery = [
+	{
+
+		alt:'img',
+        photo: "https://luxuryhomeremodeling.com/wp-content/uploads/2020/07/06-1024x1024.jpg",
+		//   width: 320,
+		height: 174,
+		tags: [
+			{ value: "Nature", title: "Nature" },
+			{ value: "Flora", title: "Flora" },
+		],
+		caption: "After Rain (Jeshu John - designerspics.com)",
+	},
+	{
+		alt:'img',
+        photo: "https://luxuryhomeremodeling.com/wp-content/uploads/2020/07/06-1024x1024.jpg",
+		//   width: 320,
+		height: 212,
+		caption: "Boats (Jeshu John - designerspics.com)",
+	},
+	{
+		alt:'img',
+        photo: "https://luxuryhomeremodeling.com/wp-content/uploads/2020/07/06-1024x1024.jpg",
+		//   width: 320,
+		height: 212,
+		caption: "Color Pencils (Jeshu John - designerspics.com)",
+	},
+	{
+		alt:'img',
+        photo: "https://luxuryhomeremodeling.com/wp-content/uploads/2020/07/06-1024x1024.jpg",
+		//   width: 320,
+		height: 213,
+		caption: "Red Apples with other Red Fruit (foodiesfeed.com)",
+	},
+	{
+		alt:'img',
+        photo: "https://luxuryhomeremodeling.com/wp-content/uploads/2020/07/02-1024x1024.jpg",
+		//   width: 320,
+		height: 183,
+		caption: "37H (gratispgraphy.com)",
+	},
+	{
+		alt:'img',
+        photo: "https://luxuryhomeremodeling.com/wp-content/uploads/2020/07/02-1024x1024.jpg",
+		//   width: 240,
+		//   height: 320,
+		tags: [{ value: "Nature", title: "Nature" }],
+		caption: "8H (gratisography.com)",
+	},
+	{
+		alt:'img',
+        photo: "https://luxuryhomeremodeling.com/wp-content/uploads/2020/07/02-1024x1024.jpg",
+		//   width: 320,
+		//   height: 190,
+		caption: "286H (gratisography.com)",
+	},
+	{
+		alt:'img',
+        photo: "https://luxuryhomeremodeling.com/wp-content/uploads/2020/07/02-1024x1024.jpg",
+		//   width: 320,
+		//   height: 148,
+		tags: [{ value: "People", title: "People" }],
+		caption: "315H (gratisography.com)",
+	},
+	
 ];
