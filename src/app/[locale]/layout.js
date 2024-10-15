@@ -23,7 +23,7 @@ export async function generateMetadata() {
 		description: "Class A Food Industries",
 		icons: {
 		  icon: [{
-			url: data.logo || "/favicon.ico"
+			url: "/favicon.ico"
 		  }]
 		}
 	  }
