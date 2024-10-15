@@ -77,7 +77,7 @@ const Slider = () => {
                                         <h2 className=' text-lg lg:text-7xl text-white  '>{t(slide?.title)}</h2>
 
 
-                                        <div className='  text-white  m-auto text-center lg:text-start text-[12px] py-7 lg:text-2xl w-[70%]  lg:w-[80%]' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t(slide?.details)) }} />
+                                        <div className='  text-white  m-auto lg:m-0 text-center lg:text-start text-[12px] py-7 lg:text-2xl w-[70%]  lg:w-[90%] ' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t(slide?.details)) }} />
                                     <Link href={'/about'} className=' my-10 border-primary_Color_Meduim border-2 cursor-pointer  hover:bg-primary_Color_dark text-[13px] lg:text-lg text-white py-2 px-8 lg:px-14 tracking-widest capitalize '>{t("Call us Now")}</Link>
 
                                     </div>
