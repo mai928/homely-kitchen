@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
 
-     const { t, i18n } = useTranslation()
+    const { t, i18n } = useTranslation()
 
     const [formData, setFormData] = useState({
         name: '',
@@ -85,39 +85,74 @@ const Contact = () => {
         }, 3000)
     };
     return (
-        <section className='contact-bg'>
-            <div className=' block lg:flex  gap-20 items-center lg:mx-28 py-20'>
-                <div className='lg:w-[50%]'>
-                    <h3 className='text-3xl text-center lg:text-start  text-[45px] w-[75%] font-semibold leading-[75px]'>
-                        {/* If you have questions,contact us */}
-                       {t("If you have an inquiry, we are happy to receive your inquiry at any time.")}
+        <section className="contact-bg">
+            <div className="block lg:flex gap-10 items-center lg:mx-28 pb-10 lg:pb-0 lg:py-20">
+                {/* Text Block */}
+                <div className="w-full lg:w-[50%] px-5 lg:px-0">
+                    <h3 className="text-2xl lg:text-[45px] text-center lg:text-start font-semibold leading-snug lg:leading-[75px]">
+                        {t("If you have an inquiry, we are happy to receive your inquiry at any time.")}
                     </h3>
                 </div>
 
-                <form onSubmit={handleSubmit} className='lg:w-[50%] mx-5 lg:mx-0'>
-                    <input onChange={handleChange} type='text' name='name' id='name' value={formData.name} required className='block border-[1px] text-gray-700 placeholder:text-gray-700  border-slate-200  py-3 my-5 px-5 w-full' placeholder={t('Name' )}/>
-                    <input onChange={handleChange} type='email' name='email' id='email' value={formData.email} required className='block border-[1px] text-gray-700 placeholder:text-gray-700  border-slate-200  py-3 my-5 px-5 w-full' placeholder={t('Email')} />
-                    <input onChange={handleChange} type='text' name='phone' id='phone' value={formData.phone} required className='block border-[1px] text-gray-700 placeholder:text-gray-700  border-slate-200  py-3 my-5 px-5 w-full' placeholder={t('Phone')} />
-                    <textarea onChange={handleChange} name='message' id='message' value={formData.message} required className='block border-[1px] text-gray-700 placeholder:text-gray-700  border-slate-200  py-3 my-5 px-5 w-full' placeholder={t('Message')} cols={5} />
-                    <div className='flex justify-end'>
-                        <button type='submit' className=' bg-primary_Color_Meduim hover:bg-primary_Color_dark text-white  text-lg py-2 px-10'>{t("Send")}</button>
-
+                {/* Form Block */}
+                <form onSubmit={handleSubmit} className="lg:w-[50%] mx-5 lg:mx-0">
+                    <input
+                        onChange={handleChange}
+                        type="text"
+                        name="name"
+                        id="name"
+                        value={formData.name}
+                        required
+                        className="block border-[1px] text-gray-700 placeholder:text-gray-700 border-slate-200 py-3 mb-5 px-5 w-full"
+                        placeholder={t('Name')}
+                    />
+                    <input
+                        onChange={handleChange}
+                        type="email"
+                        name="email"
+                        id="email"
+                        value={formData.email}
+                        required
+                        className="block border-[1px] text-gray-700 placeholder:text-gray-700 border-slate-200 py-3 mb-5 px-5 w-full"
+                        placeholder={t('Email')}
+                    />
+                    <input
+                        onChange={handleChange}
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        value={formData.phone}
+                        required
+                        className="block border-[1px] text-gray-700 placeholder:text-gray-700 border-slate-200 py-3 mb-5 px-5 w-full"
+                        placeholder={t('Phone')}
+                    />
+                    <textarea
+                        onChange={handleChange}
+                        name="message"
+                        id="message"
+                        value={formData.message}
+                        required
+                        className="block border-[1px] text-gray-700 placeholder:text-gray-700 border-slate-200 py-3 mb-5 px-5 w-full"
+                        placeholder={t('Message')}
+                        cols={5}
+                    />
+                    <div className="flex justify-end">
+                        <button type="submit" className="bg-primary_Color_Meduim hover:bg-primary_Color_dark text-white text-lg py-2 px-10">
+                            {t("Send")}
+                        </button>
                     </div>
 
+                    {/* Response Message */}
                     <div>
                         <ResponseMessage message={responseMessage} />
                     </div>
                 </form>
-
-
-
             </div>
-
 
             {/* red subscribe */}
             <Subscription />
-
         </section>
+
     )
 }
 

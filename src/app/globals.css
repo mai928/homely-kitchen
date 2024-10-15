@@ -69,12 +69,18 @@ img {
 
 .contact-bg {
   background-image: url('../../public//assets/bg-contact.jpg');
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+/* @media (max-width: 768px) {
+  .contact-bg {
+    height: 100vh;
+ background-size: cover;
+  }
+} */
 
 .barCompleted {
   width: 60%;

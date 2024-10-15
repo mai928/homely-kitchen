@@ -84,7 +84,7 @@ const Form = () => {
     }, 3000)
   };
   return (
-    <form onSubmit={handleSubmit} className=' w-[50%] py-10 text-center'>
+    <form onSubmit={handleSubmit} className=' w-full lg:w-[50%] py-10 text-center'>
         <input type='text'
           id='name'
           name='name'

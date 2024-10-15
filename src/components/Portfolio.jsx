@@ -33,16 +33,15 @@ const Portfolio = () => {
     ),
   }));
 
-  let index=0;
   return (
-    <section className=' lg:px-40 bg-imgAbout z-0'>
+    <section className=' px-5 lg:px-40 bg-imgAbout z-0'>
         <div className='text-center pb-10'>
             <p className='capitalize text-lg text-primary_Color_Meduim'>Our Portfolio</p>
-            <h3 className='text-white text-6xl  py-2'>Latest Projects  </h3>
+            <h3 className='text-white text-3xl lg:text-6xl  py-2'>Latest Projects  </h3>
         </div>
      <div className='z-0'>{
         // loading ? (<div><p className='text-center font-bold'>No Production Data</p></div>) :
-         (<ImageGallery  imagesInfoArray={images} key={index++} columnWidth={300} columnCount={3} gapSize={40} />
+         (<ImageGallery  imagesInfoArray={images}  columnWidth={300} columnCount={3} gapSize={40} />
         )
       }
         </div> 

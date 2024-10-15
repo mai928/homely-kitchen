@@ -130,12 +130,12 @@ export const sliderData = [
 	{
 		photo: 'assets/slide11.jpg',
 		title: "Luxury Kitchen design",
-		details: "Complete Remodeling & Renovation!"
+		details: "Complete Remodeling & RenovationComplete Remodeling & Renovation!"
 	},
 	{
 		photo: 'assets/para1.jpg',
 		title: "Luxury Kitchen design",
-		details: "Complete Remodeling & Renovation!"
+		details: "Complete Remodeling & RenovationComplete Remodeling & Renovation!"
 	}
 ];
 

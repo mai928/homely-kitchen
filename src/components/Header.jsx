@@ -104,7 +104,7 @@ const Header = () => {
           <div className={`w-full pe-8 z-50 ${isFixed ? 'fixed top-0  bg-black' : 'absolute top-0 '}`}>
             <div className=' flex justify-between items-center'>
               <div>
-                <img alt='logo' className='w-36' src={settings?.logo} />
+                <img alt='logo' className='w-24' src={'/assets/logo-r.png'} />
               </div>
               <div onClick={() => setToggle(!toggle)}> <svg xmlns="http://www.w3.org/2000/svg" width={20} className='fill-white ' viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" /></svg></div>
             </div>
@@ -123,7 +123,7 @@ const Header = () => {
           <div className={`sidebar ${toggle ? "open" : "close"} `}>
             <div className="p-10">
               <div className="flex justify-between items-center mb-10">
-                <Link href={'/'}><img alt="logo" width={100} height={'auto'} src={settings?.logo} /></Link>
+                <Link href={'/'}><img alt="logo" width={100} height={'auto'} src={'/assets/logo-r.png'} /></Link>
               </div>
 
               <ul>

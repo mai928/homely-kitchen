@@ -38,15 +38,16 @@ const About = async ({ params }) => {
             <div>
                 <div className=' px-10 lg:px-28 py-32'>
                     <div className='block lg:flex justify-between '>
+                    <div className='w-full h-full lg:w-[45%] mt-10 '>
+                            <img className='object-cover' src={'/assets/logo.jpg'} />
+
+                        </div>
                         <div className=' w-full lg:w-[45%]  text-center lg:text-start'>
                             <h3 className='text-xl lg:text-3xl'>{t(aboutData?.title)}</h3>
                             <div className='pt-5 pb-10 text-slate-200  text-[18px] leading-10' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t(aboutData?.details)) }} />
                             {/* <p className='pt-5 pb-10 text-meduim_gray  text-[15px] leading-8 '>{t(aboutData?.details)}</p> */}
                         </div>
-                        <div className='w-full h-full lg:w-[45%] mt-10 '>
-                            <img className='object-cover' src={'/assets/logo.jpg'} />
-
-                        </div>
+                       
 
                     </div>
                 </div>

@@ -24,7 +24,7 @@ const Video = () => {
     return (
         <section className='bg-partner ' >
 
-            <div className='lg:mx-28 py-20 lg:flex relative z-20 '>
+            <div className=' lg:mx-28 py-20 lg:flex relative z-20 '>
 
                 <div className='m-auto lg:m-0 w-[90%] lg:w-[70%] border-[1px] border-gray-800 p-14'>
                     <div className='lg:w-[60%]  text-center lg:text-start'>
